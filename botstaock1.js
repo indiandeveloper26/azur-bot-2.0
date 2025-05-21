@@ -250,7 +250,7 @@ const activeTrades = {};
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
   if (!USERS.includes(chatId)) USERS.push(chatId);
-  bot.sendMessage(chatId, '✅ Crypto Signal Bot Activated');
+  bot.sendMessage(chatId, '✅ Crypto Signal Bot Activatedd');
 });
 
 // /status command - send active trades status
