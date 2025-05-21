@@ -236,7 +236,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const { RSI, EMA, SMA, MACD } = require('technicalindicators');
 
 // Setup
-const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true });
+const bot = new TelegramBot( '7739855919:AAF2JCiwZW5bXkLAcrUx6HPCMCcgE8GJ35c', { polling: true });
 const SYMBOLS = ['ETHUSDT', 'BTCUSDT', 'BNBUSDT']; // symbols to track
 const USERS = [];
 const INTERVAL_SHORT = '1m';
