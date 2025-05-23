@@ -8,14 +8,14 @@ require('dotenv').config();
 const axios = require('axios');
 const TelegramBot = require('node-telegram-bot-api');
 const { RSI, EMA, MACD, ATR } = require('technicalindicators');
+ let toekn="7082982229:AAGJXNPWuATGRdPnzyhJ7Mb0PVbY4a5h9fY"
 
-const TELEGRAM_BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'; // yahan apna token daalein
 
-const bot = new TelegramBot('8003756443:AAHOP678U2KdAiTuVYQZVQ2DsYnT2Oq4PnE', { polling: true });
+const bot = new TelegramBot(toekn, { polling: true });
 
 // === CONFIG ===
 const SYMBOL = 'BTCUSDT';
-const INTERVAL = '5m';
+const INTERVAL = '1m';
 const TARGET_MULTIPLIER = 1.5;
 const STOPLOSS_MULTIPLIER = 1.0;
 
